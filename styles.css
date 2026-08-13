@@ -73,11 +73,6 @@ body[data-lang="ja"] b.ja, body[data-lang="ja"] span.ja, body[data-lang="ja"] dd
 .profile-facts div { padding: 18px 0; border-bottom: 1px solid var(--line); }
 .profile-facts dt { color: var(--blue); font: 700 9px monospace; letter-spacing: .15em; }
 .profile-facts dd { margin: 7px 0 0; font-size: 17px; font-weight: 720; }
-.thesis-band { overflow: hidden; padding: 24px 0; border-block: 1px solid var(--line); background: var(--acid); }
-.thesis-band p { width: max-content; margin: 0; font: 900 clamp(1.5rem,4vw,4.6rem)/1 monospace; letter-spacing: -.06em; white-space: nowrap; animation: marquee 18s linear infinite; }
-.thesis-band i { margin: 0 22px; color: var(--blue); font-style: normal; }
-@keyframes marquee { to { transform: translateX(-24%); } }
-
 .dark { max-width: none; color: white; background: var(--ink); }
 .dark > * { max-width: calc(var(--max) - 68px); margin-inline: auto; }
 .dark .section-index { left: max(34px, calc((100vw - var(--max)) / 2 + 34px)); color: rgba(255,255,255,.18); }

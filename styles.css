@@ -112,16 +112,17 @@ body[data-lang="ja"] dd.ja { display: inline !important; }
 .profile-facts div { padding: 16px 0 17px; border-bottom: 1px solid var(--line); }
 .profile-facts dt { color: var(--muted); font: 600 9px ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: .13em; }
 .profile-facts dd { margin: 6px 0 0; font-size: 16px; font-weight: 690; }
-.tech-stack { display: grid; grid-template-columns: .66fr 1.34fr; gap: 8vw; margin-top: 118px; padding-top: 38px; border-top: 1px solid var(--line-strong); }
-.tech-stack-heading h3 { margin: 0; font-size: clamp(2rem, 3.5vw, 3.6rem); line-height: 1.04; letter-spacing: -.052em; }
-.stack-table { border-top: 1px solid var(--ink); }
-.stack-row { display: grid; grid-template-columns: 42px minmax(190px, .72fr) 1.28fr; align-items: baseline; gap: 20px; padding: 24px 0; border-bottom: 1px solid var(--line); transition: padding-left 200ms ease, background-color 200ms ease; }
-.stack-row > span { color: var(--accent); font: 650 9px ui-monospace, SFMono-Regular, Consolas, monospace; }
-.stack-row h4 { margin: 0; font-size: 13px; letter-spacing: -.01em; }
-.stack-row ul { display: flex; flex-wrap: wrap; gap: 5px 18px; margin: 0; padding: 0; list-style: none; }
-.stack-row li { position: relative; color: var(--muted); font-size: 13px; }
-.stack-row li:not(:last-child)::after { content: "/"; position: absolute; right: -12px; color: #b0afa9; }
-.stack-row:hover { padding-left: 8px; background: #fafaf8; }
+.prior-work { display: grid; grid-template-columns: .72fr 1.28fr; gap: 9vw; margin-top: 118px; padding-top: 38px; border-top: 1px solid var(--line-strong); }
+.prior-work-heading h3 { margin: 0; font-size: clamp(2rem, 3.5vw, 3.6rem); line-height: 1.04; letter-spacing: -.052em; }
+.prior-work-heading > p:not(.section-label) { max-width: 430px; margin: 28px 0 0; color: var(--muted); }
+.prior-projects { display: grid; grid-template-columns: .86fr 1.14fr; grid-template-rows: auto auto; border-top: 1px solid var(--ink); }
+.prior-project { display: block; padding: 24px 0 25px 26px; border-bottom: 1px solid var(--line); border-left: 1px solid var(--line); }
+.prior-project-main { grid-row: 1 / span 2; padding: 30px 30px 28px 0; border-left: 0; }
+.prior-project > span { color: var(--accent); font: 650 9px ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: .1em; }
+.prior-project p { margin: 22px 0 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
+.prior-project-main p { margin-top: 70px; }
+.prior-project:hover { background: #fafaf8; box-shadow: inset 3px 0 0 var(--accent); }
+.prior-project-main:hover { box-shadow: inset 0 -3px 0 var(--accent); }
 
 .dark { max-width: none; color: var(--ink); background: var(--paper); border-top: 1px solid var(--line); }
 .dark > * { max-width: calc(var(--max) - 68px); margin-inline: auto; }
@@ -249,7 +250,7 @@ footer .photo-note { grid-column: 1 / -1; margin-top: 9px; color: #9b9b95; font-
   .profile-intro, .section-heading { grid-template-columns: 1fr; gap: 26px; }
   .profile-intro h2, .section-heading h2, .section-heading > p:not(.section-label) { grid-column: 1; }
   .profile-grid { grid-template-columns: 1fr; gap: 58px; margin-top: 72px; }
-  .tech-stack { grid-template-columns: 1fr; gap: 58px; margin-top: 92px; }
+  .prior-work { grid-template-columns: 1fr; gap: 58px; margin-top: 92px; }
   .dark .section-index, .warm .section-index { left: 24px; }
   .project { grid-template-columns: 52px 1fr; gap: 22px; }
   .project-body { grid-column: 2; }
@@ -282,8 +283,9 @@ footer .photo-note { grid-column: 1 / -1; margin-top: 9px; color: #9b9b95; font-
   .project-detail-grid { grid-template-columns: 1fr; }
   .project-detail-grid div:nth-child(odd), .project-detail-grid div:nth-child(even) { padding: 15px 0; border-left: 0; }
   .project-body ul { display: grid; grid-template-columns: 1fr 1fr; }
-  .stack-row { grid-template-columns: 34px 1fr; gap: 8px 12px; }
-  .stack-row ul { grid-column: 2; }
+  .prior-projects { grid-template-columns: 1fr; grid-template-rows: auto; }
+  .prior-project, .prior-project-main { grid-row: auto; padding: 25px 0; border-left: 0; }
+  .prior-project p, .prior-project-main p { margin-top: 20px; }
   .system-showcase { gap: 16px; }
   .system-note { padding: 26px 22px; }
   .photo-story { display: block; }

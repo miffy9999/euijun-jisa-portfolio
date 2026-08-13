@@ -122,10 +122,8 @@ body[data-lang="ja"] dd.ja { display: inline !important; }
 .prior-project strong { display: block; margin-top: 28px; font-size: clamp(1.35rem, 2.2vw, 2.2rem); line-height: 1.1; letter-spacing: -.035em; }
 .prior-project-main strong { margin-top: 70px; font-size: clamp(2rem, 3vw, 3rem); }
 .prior-project p { margin: 13px 0 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
-.prior-project small { display: block; margin-top: 26px; color: #8f8f88; font: 600 8px ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: .1em; }
 .prior-project:hover { background: #fafaf8; box-shadow: inset 3px 0 0 var(--accent); }
 .prior-project-main:hover { box-shadow: inset 0 -3px 0 var(--accent); }
-.prior-project:hover small { color: var(--accent); }
 
 .dark { max-width: none; color: var(--ink); background: var(--paper); border-top: 1px solid var(--line); }
 .dark > * { max-width: calc(var(--max) - 68px); margin-inline: auto; }

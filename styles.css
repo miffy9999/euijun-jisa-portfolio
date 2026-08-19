@@ -39,6 +39,17 @@ body[data-lang="ja"] .ja { display: block !important; }
 body[data-lang="ja"] b.ja,
 body[data-lang="ja"] span.ja,
 body[data-lang="ja"] dd.ja { display: inline !important; }
+body[data-lang="ja"] p.ja,
+body[data-lang="ja"] h1 .ja,
+body[data-lang="ja"] h2.ja,
+body[data-lang="ja"] h3.ja,
+body[data-lang="ja"] dd.ja,
+body[data-lang="ja"] figcaption .ja {
+  line-break: strict;
+  word-break: auto-phrase;
+  overflow-wrap: anywhere;
+  text-wrap: pretty;
+}
 
 .site-header {
   position: fixed;
@@ -81,10 +92,13 @@ body[data-lang="ja"] dd.ja { display: inline !important; }
 .hero-grid, .hero-orbit { display: none; }
 .hero-copy { position: relative; z-index: 2; min-width: 0; max-width: 1040px; }
 .eyebrow, .section-label { margin: 0 0 25px; color: var(--accent); font: 650 10px/1.2 ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: .17em; text-transform: uppercase; }
+.hero-name { margin: 0 0 22px; color: var(--muted); font-size: clamp(14px, 1.25vw, 18px); font-weight: 720; letter-spacing: -.018em; }
 .hero h1 { max-width: 1020px; margin: 0; font-size: clamp(4.4rem, 8.7vw, 8.6rem); line-height: .89; letter-spacing: -.078em; font-weight: 850; }
 .hero h1 > span { display: block; white-space: nowrap; }
 .hero h1 em { color: var(--accent); font-style: normal; font-weight: 500; }
 .hero-lead { max-width: 650px; margin: 48px 0 0; padding-top: 22px; color: var(--muted); border-top: 1px solid var(--line-strong); font-size: clamp(15px, 1.35vw, 18px); }
+.hero-skills { display: flex; flex-wrap: wrap; gap: 7px; margin: 22px 0 0; padding: 0; list-style: none; }
+.hero-skills li { padding: 5px 9px; color: #4d4d49; background: rgba(255, 255, 255, .68); border: 1px solid var(--line); border-radius: 3px; font: 650 9px ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: .04em; }
 .hero-status { position: relative; z-index: 3; min-width: 0; display: grid; align-self: end; width: 100%; border-top: 2px solid var(--ink); }
 .hero-status div { display: grid; grid-template-columns: 88px 1fr; align-items: baseline; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--line); }
 .hero-status span { color: var(--muted); font: 600 9px ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: .12em; }
@@ -273,9 +287,14 @@ footer .photo-note { grid-column: 1 / -1; margin-top: 9px; color: #9b9b95; font-
   .brand-panel { width: auto; }
   .wordmark { min-width: 190px; flex: none; }
   .hero { min-height: auto; padding: 136px 20px 72px; }
+  .hero-copy, .hero-status { width: calc(100vw - 40px); min-width: 0; max-width: calc(100vw - 40px); }
   .hero h1 { max-width: 100%; font-size: clamp(2rem, 9.1vw, 3.4rem); letter-spacing: -.06em; }
   .hero h1 > span { white-space: nowrap; }
-  .hero-lead { margin-top: 34px; }
+  body[data-lang="ja"] .hero h1 > span { white-space: normal; }
+  .hero-name { max-width: 300px; margin-bottom: 18px; }
+  .hero-lead { width: 100%; max-width: 100%; margin-top: 34px; overflow-wrap: anywhere; }
+  .hero-skills { gap: 6px; }
+  .hero-status strong { min-width: 0; overflow-wrap: anywhere; }
   .hero-status div { grid-template-columns: 78px 1fr; }
   .section { padding: 104px 20px; }
   .profile-intro h2, .section-heading h2 { font-size: clamp(2rem, 9vw, 3.2rem); white-space: normal; }

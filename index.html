@@ -93,8 +93,8 @@
         <div class="prior-projects">
           <article class="prior-project prior-project-main">
             <span>01 · PYTHON / OPENCV</span>
-            <p class="ko">웹캠 영상을 OpenCV로 받고 얼굴·연령 모델에 넘긴 뒤, 분석 결과에 맞는 광고를 화면에 띄웠습니다. 입력이 들어오고, AI가 처리하고, 결과가 바로 보이는 구조였습니다. 지금 돌아보면 번역기와 꽤 닮아 있었습니다.</p>
-            <p class="ja">Webカメラ映像をOpenCVで受け取り、顔・年齢モデルへ渡した後、分析結果に合う広告を画面へ表示しました。入力をAIが処理し、結果がすぐ見える構成です。振り返ると、今回の翻訳機とよく似ていました。</p>
+            <p class="ko">웹캠 영상을 OpenCV로 받고 <span class="nowrap">얼굴·연령</span> 모델에 넘긴 뒤, 분석 결과에 맞는 광고를 화면에 띄웠습니다. 입력이 들어오고, AI가 처리하고, 결과가 바로 보이는 구조였습니다. 지금 돌아보면 번역기와 꽤 닮아 있었습니다.</p>
+            <p class="ja">Webカメラ映像をOpenCVで受け取り、<span class="nowrap">顔・年齢</span>モデルへ渡した後、分析結果に合う広告を画面へ表示しました。入力をAIが処理し、結果がすぐ見える構成です。振り返ると、今回の翻訳機とよく似ていました。</p>
           </article>
           <article class="prior-project">
             <span>02 · PYTHON / AI</span>
@@ -115,7 +115,7 @@
       <div class="section-heading reveal">
         <p class="section-label">WORK / 企業実習</p>
         <h2 class="ko">번역기를 중심으로,<br />서버까지 연결했습니다</h2>
-        <h2 class="ja">翻訳機を中心に、<br />サーバーまでつなげました</h2>
+        <h2 class="ja">翻訳機を軸に、<br />サーバーまで連携</h2>
         <p class="ko">가장 오래 붙잡은 건 호텔용 로컬 실시간 번역기였습니다. 인식이 빠른지, 번역이 자연스러운지, 직원이 바로 읽을 수 있는지 하나씩 고쳤습니다. 틈틈이 채팅 서버도 붙이고, VPS에서 실제로 돌아가도록 배포까지 맡았습니다.</p>
         <p class="ja">最も長く取り組んだのは、ホテル向けのローカルリアルタイム翻訳機です。認識は速いか、訳文は自然か、スタッフがすぐ読めるか。一つずつ直しました。その合間にチャットサーバーもつなぎ、VPS上で実際に動くところまで配備しました。</p>
       </div>
@@ -148,7 +148,7 @@
             <h3 class="ja">チャット連携と<br />サーバー配備</h3>
           </div>
           <div class="project-body">
-            <p class="ko">채팅 쪽에서는 화면보다 서버를 더 많이 봤습니다. NestJS·Socket.IO·PostgreSQL을 Docker Compose로 묶고, Caddy가 HTTPS와 실시간 연결을 맡도록 구성했습니다. 처음에는 로컬에서만 확인했지만, 마지막에는 Sakura VPS에 올려 관리자·상담원·고객 화면을 직접 오가며 데이터가 제대로 흐르는지 확인했습니다.</p>
+            <p class="ko">채팅 쪽에서는 화면보다 서버를 더 많이 봤습니다. NestJS·Socket.IO·PostgreSQL을 Docker Compose로 묶고, Caddy가 HTTPS와 실시간 연결을 맡도록 구성했습니다. 처음에는 로컬에서만 확인했지만, 마지막에는 Sakura VPS에 올려 관리자, 상담원, 고객 화면을 직접 오가며 데이터가 제대로 흐르는지 확인했습니다.</p>
             <p class="ja">チャットでは、画面よりサーバーを見る時間の方が長くなりました。NestJS・Socket.IO・PostgreSQLをDocker Composeでまとめ、CaddyにHTTPSとリアルタイム接続を任せる構成です。最初はローカルだけで確認していましたが、最後はSakura VPSへ上げ、管理者・担当者・顧客の各画面を行き来しながらデータの流れを確かめました。</p>
             <ul><li>NestJS</li><li>Socket.IO</li><li>PostgreSQL</li><li>Docker</li><li>Caddy HTTPS</li></ul>
             <a class="project-link" href="https://os3-371-18550.vs.sakura.ne.jp/staff/" target="_blank" rel="noreferrer"><span class="ko">운영 로그인 화면 보기</span><span class="ja">運用ログイン画面を見る</span><b>↗</b></a>
@@ -247,14 +247,14 @@
       <div class="section-heading reveal">
         <p class="section-label">REFLECTION / 振り返り</p>
         <h2 class="ko">막힌 만큼,<br /><em>해결하는 법을 배웠습니다</em></h2>
-        <h2 class="ja">つまずいた分だけ、<br /><em>解決する力を学びました</em></h2>
+        <h2 class="ja">課題から、<br /><em>解決力を学びました</em></h2>
         <p class="ko">가장 어려웠던 점은 기능을 만드는 것보다, 여러 기능이 실제 환경에서 끊기지 않게 이어지도록 만드는 일이었습니다. 번역 속도가 늦어지고, 로컬에서 되던 연결이 서버에서 막히고, 일본어 요구사항을 한 번에 이해하지 못하기도 했습니다. 문제를 작게 나눠 확인하고, 직접 질문하고, 현장 순서대로 다시 테스트하며 하나씩 해결했습니다.</p>
         <p class="ja">最も難しかったのは機能を作ることより、複数の機能を実環境で途切れずにつなぐことでした。翻訳が遅れ、ローカルで動いた接続がサーバーでは止まり、日本語の要望を一度で理解できないこともありました。問題を小さく分けて確認し、自分から質問し、現場の手順に沿ってテストを重ねながら一つずつ解決しました。</p>
       </div>
 
       <div class="growth-grid">
         <article class="reveal"><span>01 · PERFORMANCE</span><h3 class="ko">정확도와 속도의 충돌</h3><h3 class="ja">精度と速度の両立</h3><p class="ko">음성 인식과 번역을 차례로 거치자 결과가 늦게 뜨고, 새 발화가 들어와도 이전 작업을 기다리는 문제가 생겼습니다. 최신 발화를 먼저 처리하고 반복 문장은 번역 메모리에서 불러오도록 흐름을 바꿨습니다. 모델 정확도만큼 응답 속도와 화면 안정성이 중요하다는 것을 배웠습니다.</p><p class="ja">音声認識と翻訳を順番に処理すると表示が遅れ、新しい発話が入っても前の処理を待つ問題が起きました。最新の発話を優先し、繰り返し使う文章は翻訳メモリから呼び出す流れに変更しました。モデルの精度だけでなく、応答速度と画面の安定性も重要だと学びました。</p></article>
-        <article class="reveal"><span>02 · DEPLOYMENT</span><h3 class="ko">로컬과 실제 서버의 차이</h3><h3 class="ja">ローカルと実環境の違い</h3><p class="ko">내 PC에서는 되던 채팅 연결이 VPS의 HTTPS와 WebSocket 환경에서는 그대로 동작하지 않았습니다. NestJS·PostgreSQL을 Docker Compose로 묶고 Caddy 설정을 조정한 뒤, 관리자·상담원·고객 화면을 직접 오가며 연결을 검증했습니다.</p><p class="ja">自分のPCでは動いたチャット接続が、VPSのHTTPS・WebSocket環境ではそのまま動きませんでした。NestJSとPostgreSQLをDocker Composeでまとめ、Caddyの設定を調整した後、管理者・担当者・顧客の各画面を行き来して接続を検証しました。</p></article>
+        <article class="reveal"><span>02 · DEPLOYMENT</span><h3 class="ko">로컬과 실제 서버의 차이</h3><h3 class="ja">ローカルと実環境の違い</h3><p class="ko">내 PC에서는 되던 채팅 연결이 VPS의 HTTPS와 WebSocket 환경에서는 그대로 동작하지 않았습니다. NestJS·PostgreSQL을 Docker Compose로 묶고 Caddy 설정을 조정한 뒤, 관리자, 상담원, 고객 화면을 직접 오가며 연결을 검증했습니다.</p><p class="ja">自分のPCでは動いたチャット接続が、VPSのHTTPS・WebSocket環境ではそのまま動きませんでした。NestJSとPostgreSQLをDocker Composeでまとめ、Caddyの設定を調整した後、管理者・担当者・顧客の各画面を行き来して接続を検証しました。</p></article>
         <article class="reveal"><span>03 · COMMUNICATION</span><h3 class="ko">일본어로 확인하고 다시 설명하기</h3><h3 class="ja">日本語で確認し、伝え直す</h3><p class="ko">업무 일본어와 요구사항이 익숙하지 않아 이해한 척 넘기면 개발 방향이 달라질 수 있었습니다. 화면과 동작을 짧은 일본어로 다시 확인하고, 수정한 버전을 바로 보여주며 피드백을 받았습니다. 질문을 빨리 하는 것이 결국 일을 빠르게 끝내는 방법이었습니다.</p><p class="ja">業務で使う日本語や要望の理解に慣れておらず、分かったつもりで進めると開発の方向がずれる可能性がありました。画面と動作を短い日本語で確認し、修正版をすぐ見せてフィードバックを受けました。早く質問することが、結果として仕事を早く終える方法でした。</p></article>
       </div>
 
